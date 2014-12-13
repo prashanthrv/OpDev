@@ -1,0 +1,3 @@
+require("coffee-script/register")
+require("coffee-script")
+require("./app/app.coffee")

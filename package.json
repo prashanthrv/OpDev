@@ -1,0 +1,19 @@
+{
+  "name": "OpDev",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-script": "*",
+    "connect-assets": "2.1.x",
+    "express": "3.0.0beta4",
+    "jade": "*",
+    "less": "1.7.5",
+    "tingodb": "^0.3.1"
+  },
+  "scripts": {
+    "start": "server.js"
+  },
+  "engines": {
+    "node": "0.10.32",
+    "npm": "1.1.x"
+  }
+}

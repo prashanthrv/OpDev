@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  div.container
+    div.content
+      div.row
+        div.col-lg-12
+          div.page-header
+            h1#navbar(style="font-size:4em;") OpDev
+          div.bs-component
+            div.navbar.navbar-default
+              div.navbar-header
+                a.navbar-brand(href="/") Home
+              div.navbar-collapse.collapse.navbar-responsive-collapse
+                ul.nav.navbar-nav
+                  li
+                    a(href="/projects") Projects
+                  li
+                    a(href="/about") About
+                form.navbar-form.navbar-right
+                  input.form-control.col-lg-8(type="search", placeholder="Search projects")
+          div.bscomponent
+            div.jumbotron
+              h1 Welcome to OpDev
+                p(style="font-size:18px;")
+                  | This is a simple development helper for OpManager for js compression, enabling development mode, compilation of java classes and few other things.
+                p
+                  a.btn.btn-primary.btn-lg 
+                    i.fa.fa-github 
+                    | &nbsp; GitHub Link
