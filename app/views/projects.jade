@@ -16,6 +16,87 @@ block content
                   li.active
                     a(href="/projects") Projects
                   li
+                    a(href="/sources") Sources
+                  li
+                    a(href="/settings") Settings
+                  li
                     a(href="/about") About
                 form.navbar-form.navbar-right
                   input.form-control.col-lg-8(type="search", placeholder="Search projects")
+          div.row
+            div.col-lg-3
+              div.bs-component
+                div.list-group
+                  a.list-group-item.active(href='#', style="background-color:#375a7f;")
+                    i.fa.fa-plus-square
+                    | &nbsp; Add new project
+                  a.list-group-item(href='#', style="color:white;")
+                    | Caesars
+                  a.list-group-item(href='#', style="color:white;")
+                    | 11500_issues
+            div.col-lg-9
+              div.bs-component
+                div.jumbotron
+                  form.form-horizontal
+                    fieldset
+                      legend Add new project
+                      .form-group
+                        label.col-lg-2.control-label(for='inputEmail') Email
+                        .col-lg-10
+                          input#inputEmail.form-control(type='text', placeholder='Email')
+                      .form-group
+                        label.col-lg-2.control-label(for='inputPassword') Password
+                        .col-lg-10
+                          input#inputPassword.form-control(type='password', placeholder='Password')
+                          .checkbox
+                            label
+                              input(type='checkbox')
+                              | Checkbox
+                      .form-group
+                        label.col-lg-2.control-label(for='textArea') Textarea
+                        .col-lg-10
+                          textarea#textArea.form-control(rows='3')
+                          span.help-block
+                            | A longer block of help text that breaks onto a new line and may extend beyond one line.
+                      .form-group
+                        label.col-lg-2.control-label Radios
+                        .col-lg-10
+                          .radio
+                            label
+                              input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+                              | Option one is this
+                          .radio
+                            label
+                              input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                              | Option two can be something else
+                      .form-group
+                        label.col-lg-2.control-label(for='select') Selects
+                        .col-lg-10
+                          select#select.form-control
+                            option 1
+                            option 2
+                            option 3
+                            option 4
+                            option 5
+                          br
+                          select.form-control(multiple='')
+                            option 1
+                            option 2
+                            option 3
+                            option 4
+                            option 5
+                      .form-group
+                        .col-lg-10.col-lg-offset-2
+                          button.btn.btn-default Cancel
+                          button.btn.btn-primary(type='submit') Submit
+      div.footer
+        div.row
+          div.col-lg-12
+            p
+              | With love from &nbsp;
+              a(href='http://about.me/prashanthrv', target="_blank") Prashanth R &nbsp;
+              ||&nbsp; Made in India | &nbsp;
+              i.fa.fa-copyright
+              | &nbsp; I have no idea how to get a copyright  | &nbsp;
+              i.fa.fa-mobile
+              | &nbsp; +91-9940115074
