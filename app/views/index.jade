@@ -27,7 +27,8 @@ block content
               |{{outlet}}
           div.footer
             div.row
-              div.col-lg-12
+              div.col-lg-2
+              div.col-lg-10
                 p
                   | With love from &nbsp;
                   a(href='http://about.me/prashanthrv', target="_blank") Prashanth R &nbsp;
@@ -53,14 +54,22 @@ block content
             div.col-lg-3
               div.bs-component
                 div.list-group
-                  a.list-group-item.active(href='#', style="background-color:#375a7f;")
-                    i.fa.fa-plus-square
-                    | &nbsp; Add new project
-                  a.list-group-item(href='#', style="color:white;")
-                    | Caesars
-                  a.list-group-item(href='#', style="color:white;")
-                    | 11500_issues
+                  |{{#link-to 'projects.index' class='list-group-item'}}
+                  i.fa.fa-plus-square
+                  | &nbsp; Add new project
+                  |{{/link-to}}
+                  |{{#each project in model.projects}}
+                  |{{#link-to 'projects.project' project class='list-group-item'}}
+                  | {{project.name}}
+                  |{{/link-to}}
+                  |{{/each}}
             div.col-lg-9
+              {{outlet 'projectsubpage'}}
+  script(type="text/x-handlebars" id="projectdetails")
+    div.bscomponent
+      div.jumbotron
+        |Project Details
+  script(type="text/x-handlebars" id="addnewproject")
               div.bs-component
                 div.jumbotron
                   form.form-horizontal
