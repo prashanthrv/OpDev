@@ -21,7 +21,7 @@ block content
                       li
                         |{{#link-to 'settings'}}Settings{{/link-to}}
                       li
-                        |{{#link-to 'about'}}About{{/link-to}}
+                        |{{#link-to 'about'}}About Me{{/link-to}}
                     form.navbar-form.navbar-right
                       input.form-control.col-lg-8(type="search", placeholder="Search projects/sources")
               |{{outlet}}
@@ -69,6 +69,39 @@ block content
     div.bscomponent
       div.jumbotron
         |Project Details
+  script(type="text/x-handlebars" id="aboutme")
+    div.row(style="margin-bottom:100px;")
+      div.col-lg-3
+        div(id="abtImgBox")
+          img(src="images/prashanth.jpg", width="100%")
+          div(id="abtName", style="background-color:#303030;")
+            |Prashanth RV
+      div.col-lg-6
+        h2
+          |About Me
+        br
+        h5(style="line-height:20pt;")
+          |Hi, I am here to save the world. I know it is a pretty hard job to do. But I am still sticking to it and not gonna give up ever.
+          br
+          br
+          |Technology enthusiast,Web Developer, Open-source supporter, Amatuer artist, Ux Designer, Wanna be CEO, OnePiece fan, Coffee addict, Gadget freak, watches almost everything he likes, brushes twice a day,and an 
+          |upcoming billionare.
+      div.col-lg-3
+        h2
+          |Contact Me
+        br
+        h4(style="line-height:25pt;")
+          | Mobile: +91-9940115074
+          br
+          | Mail  : gameboxin@gmail.com
+          br
+          | Facebook: 
+          a(href="http://www.facebook.com/flameaddict")
+            |Prashanth Rajasekar
+          br
+          | Twitter: 
+          a(href="https://twitter.com/pra5hanthR")
+            | @pra5hanthR
   script(type="text/x-handlebars" id="addnewproject")
               div.bs-component
                 div.jumbotron
